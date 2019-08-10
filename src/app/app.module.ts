@@ -91,4 +91,5 @@ import { GalleryModule } from  '@ngx-gallery/core';
 })
 
 // Anand yadav
+//anand
 export class AppModule { }
