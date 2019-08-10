@@ -89,4 +89,6 @@ import { GalleryModule } from  '@ngx-gallery/core';
   providers: [CommonService, VendorAuthGuard,],
   bootstrap: [AppComponent]
 })
+
+// Anand yadav
 export class AppModule { }
