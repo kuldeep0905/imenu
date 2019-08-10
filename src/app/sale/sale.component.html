@@ -1,0 +1,31 @@
+<div style="position: relative; height: 100vh;">
+  <div *ngFor="let item of sales" class="salesbox">
+    <h3>
+      <span style="color: coral">NO. OF OFLINE SALES:</span><span style="color: darkorchid">
+        {{item.total_no_of_ofline_sale}}</span></h3>
+        <br>
+    
+      <h3>
+        <span style="color: coral">NO. OF ONLINE SALES:</span><span style="color: darkorchid">{{item.total_no_of_online_sale}}</span>
+      </h3><br>
+      <h3>
+      <span style="color: coral">TOTAL NO. OF SALES:</span><span style="color: darkorchid"> {{item.total_no_of_sales}}</span>
+    </h3><br>
+    
+        <h3>
+          <span style="color: coral">OFLINE SALES(SR):</span><span style="color: darkorchid">{{item.total_ofline_sales_amount}}</span>
+        </h3><br>
+        
+          <h3>
+            <span style="color: coral">ONLINE SALES(SR):</span><span style="color: darkorchid">
+              {{item.total_online_sales_amount}}</span></h3><br>
+          
+            <h3>
+              <span style="color: coral">TOTAL SALES(SR):</span><span style="color: darkorchid">
+                {{item.total_sales_amount}}</span></h3>           
+             
+  
+  </div>
+</div>
+
+

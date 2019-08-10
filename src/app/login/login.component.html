@@ -1,0 +1,118 @@
+<!-- <div class="login_wrapper clearfix">
+    <div class="row clearfix">
+      <div class="col-xs-1 col-sm-1 col-md-1">
+        <div class="logo_div clearfix">
+         <a [routerLink]="[ '/login']">
+          <img  src="assets/images/logo.png" alt=""/>
+        </a>
+        </div> 
+      </div>
+      <div class="col-xs-12 col-sm-5 col-md-4"> 
+        <div class="login_form clearfix">
+          <h4>login</h4>
+          <form class="clearfix" [formGroup]="myGroup">
+          <div class="row clearfix">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+              <div class="form-group">
+                  <i class="fa fa-envelope-o"></i>
+                <input type="text" class="form-control" [formControl]="mygroup.controls['email']" value="" placeholder="Email address"/>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+              <div class="form-group">
+              <i class="fa fa-lock"></i>
+                <input type="text" class="form-control" [formControl]="myGroup.controls['password']" value="" placeholder="Password"/>
+              </div>
+            </div> 
+            <div class="col-xs-12 col-sm-12 col-md-12">
+              <a [routerLink]="[ '/forgetPassword' ]">Forgot Password?</a>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+              <div class="login_btn"> 
+                <button type="button" (click)="login()">Login</button>
+              </div>
+            </div>
+            </div>
+          </form>
+          <div class="signup_box clearfix">
+            <h5>Create a new account<a [routerLink]="[ '/signup' ]"><span>Sign up !</span></a></h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-7">
+        <div class="login_image clearfix">
+          <img src="assets/images/login.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <div>
+      <!-- Login Section Start Here -->
+      <div class="login_wrapper clearfix">
+        <div class="row clearfix">
+          <form [formGroup]='myGroup'>
+            <div class="col-xs-1 col-sm-1 col-md-1">
+              <div class="logo_div clearfix">
+                <img src="assets/images/logo.png" alt="" />
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-5 col-md-4">
+              <div class="login_form clearfix">
+                <h4>login</h4>
+                <div class="row clearfix">
+                  <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="form-group">
+                      <i class="fa fa-envelope-o"></i>
+                      <input class="form-control" type="email" placeholder="Email Address" name="email"
+                        [formControl]="myGroup.controls['email']" />
+                      <div class="error_box clearfix">
+                        <p *ngIf="myGroup.controls['email'].hasError('required') && myGroup.controls['email'].dirty"
+                          style="color:red;font-size:14px;">*Email
+                          is required</p>
+                        <p *ngIf="myGroup.controls['email'].hasError('pattern') && myGroup.controls['email'].dirty"
+                          style="color:red;font-size:14px;">*Please
+                          enter valid email.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="form-group">
+                      <i class="fa fa-lock"></i>
+                      <input class="form-control" autocomplete type="password"
+                        [formControl]="myGroup.controls['password']" placeholder="Password" />
+                      <div class="error_box clearfix">
+                        <p *ngIf="myGroup.controls['password'].hasError('required') && myGroup.controls['password'].dirty"
+                          style="color:red;font-size:14px;">*Password
+                          is required</p>
+                        <p *ngIf="myGroup.controls['password'].hasError('pattern') && myGroup.controls['password'].dirty"
+                          style="color:red;font-size:14px;">*Please
+                          enter valid password.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <div class="col-xs-12 col-sm-12 col-md-12">
+                    <a class="floatrigt fontsize15" [routerLink]="['/forgotPassword']">Forgot Password ?</a>
+                  </div> -->
+                  <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="login_btn clearfix">
+                      <button (click)="submitEnq(myGroup.value)"  type="submit">Login</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="signup_box clearfix">
+                  <h5>Create a new account <span [routerLink]="['/signup']">Sign up !</span></h5>
+                </div> -->
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-7">
+              <div class="login_image clearfix">
+                <img src="assets/images/login.png" alt="" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- Login Section End Here -->
+    
+    </div>

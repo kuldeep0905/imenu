@@ -1,0 +1,93 @@
+<div id="wrapper">
+        <app-header></app-header>
+        <app-sidebar></app-sidebar>
+
+        <section class="content_wrapper clearfix toggled">
+
+          <div class="tab-inn" *ngIf="andShow">
+              <div class="table-responsive table-desi">
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th>USER</th>
+                      <th>NAME</th>
+                      <th>TOTAL ONLINE AMOUNT(SR)</th>
+                      <th>TOTAL ONLINE ORDER</th>
+                      <th>DETAILS</th>
+                    </tr>
+                  </thead>
+                  <tbody *ngFor="let trans of mer">             
+                    <tr>
+                       <td><span class="list-img"><img [src]="trans.logo" alt="logo"></span>
+                       </td>
+                       <td width="30%"><span class="list-enq-name">{{trans.title}}</span><span class="list-enq-city">{{trans.location}}</span>
+                       </td>
+                      <th>{{trans?.total_onlinesale_amount}}</th>
+                      <td>{{trans?.count_total}}</td>
+                      <td>
+                        <span class="label">
+                          <button class="order_detail" mat-button (click)="MerchantDetails(trans.mid)">DETAILS</button>
+                        </span>
+                      </td>
+       
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+
+
+            <div class="tab-inn" *ngIf="show">
+
+              <div *ngFor="let res of respo; let i=index">
+                <div *ngIf="i==0">
+                  <img title="{{res.title}}" src="{{res.logo}}" alt="user" class="user_image">
+                  <div class="pos_text"><h3>{{res.title}}</h3></div>s
+                  <div class="pos_address">{{res.location}}</div>
+                  
+                </div>
+              </div>
+              <br>
+                <ul>
+                    <li class="page-back"><a (click)="back()"><i class="fa fa-backward" aria-hidden="true"></i> Back</a>
+                    </li>
+                </ul>
+               
+                <div class="table-responsive table-desi">
+                  <table class="table table-hover">
+
+                     
+
+                    <thead>
+                      <tr>
+                        <!-- <th>LOGO</th>
+                        <th>NAME</th> -->
+                        <th>OID</th>
+                        <th>TOTAL(SR)</th>
+                        <th>PAYMENT</th>
+                      </tr>
+                    </thead>
+                    <tbody *ngFor="let res of respo">             
+                      <tr>
+                          
+                         <!-- <td><span class="list-img"><img [src]="res.logo" alt="logo"></span>
+                         </td>
+                        <td><span class="list-enq-name">{{res?.title}}</span>
+                        </td> -->
+                        <td><span class="list-enq-name">{{res?.order_id}}</span></td>
+                        <th>{{res?.total}}</th>       
+                        <td><span class="list-enq-name">{{res?.payment}}</span></td>  
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+  
+            
+       
+       
+     
+    </section>
+      </div>
+ 

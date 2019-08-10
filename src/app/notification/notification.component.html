@@ -1,0 +1,87 @@
+<div id="wrapper">
+
+  <!-- header & sidenav -->
+  <app-header></app-header>
+  <app-sidebar></app-sidebar>
+  <!-- header & sidenav -->
+
+  <section class="content_wrapper-1 clearfix toggled">
+      
+    <div class="welcome clearfix">
+      <!-- Refresher -->
+        <ul>
+            <li class="refresh"><a (click)="back()"><i class="fa" aria-hidden="true"></i>
+              <i class="material-icons">
+                  refresh
+                  </i>
+                </a>
+            </li>
+          </ul>
+          <!-- Refresher -->
+      <div class="welcome_text clearfix">
+        <div class="row gutter-xs">
+          <form [formGroup]="form" class="center form form-horizontal">
+            <div class="col-md-7 card panel-body" style="box-shadow: 0px 0px 14px #999;">
+
+              <div class="col-md-12">
+                <h3 style="margin-bottom:37px">Push Notification</h3>
+              </div>
+              <select formControlName="item" id="getValue" [value]="2" >
+                <option *ngFor="let item of items"   value={{item.value}}>
+                  {{item.name}}
+                </option>
+              </select>
+              <!-- <div *ngIf="form.controls.item.errors?.required && form.controls.item.dirty">
+                <span style="color: #a94442 ; float:left">This field is required</span>
+              </div> -->
+              <div class="col-sm-12 col-md-12">
+                <div class="demo-form-wrapper">
+                  <div class="form-group">
+                    <div class="form-group">
+                      <label class="col-md-3 control-label" for="name">Title</label>
+                      <div class="col-md-7">
+                        <input formControlName="title" type="text" placeholder="Your Title" class="form-control">
+                        <div *ngIf="form.controls.title.errors?.required && form.controls.title.dirty">
+                          <span style="color: #a94442 ; float:left">This field is required</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Message body -->
+                    <div class="form-group">
+                      <label class="col-md-3 control-label" for="message">Description</label>
+                      <div class="col-md-7">
+                        <textarea class="form-control" formControlName="description"
+                          placeholder="Please enter your description here..." rows="5"></textarea>
+                      </div>
+
+                    </div>
+                    <div *ngIf="form.controls.description.errors?.required && form.controls.description.dirty">
+                      <span style="color: #a94442; ">This field is required</span>
+                    </div>
+                    <!-- Message body -->
+
+
+
+                  </div>
+                </div>
+                <p style="text-align: center;color: #a94442"></p>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <div class=" col-sm-8  col-md-8 ">
+                      <button style="margin-left:218px" [disabled]="!form.valid" (click)="send(form.value)"
+                        class="btn btn-primary " type="submit">Send
+                        Notification</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>

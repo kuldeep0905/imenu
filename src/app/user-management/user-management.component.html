@@ -1,0 +1,186 @@
+ <div id="wrapper">
+   <app-header></app-header>
+   <app-sidebar></app-sidebar>
+
+   <section class="content_wrapper clearfix toggled">
+
+     <div class="insight_box clearfix">
+       <div class="insight_graph">
+         <div *ngIf="!show && SHOW">
+           <mat-card fxLayout="row" fxLayoutAlign="center" *ngFor="let items of res">
+              <ul>
+                  <li class="page-back"><a (click)="back()"><i class="fa fa-backward" aria-hidden="true"></i> Back</a>
+                  </li>
+              </ul>
+             <img [src]="items.image" alt="user" class="user_image">
+             <h3>
+               <span style="color: coral">NAME:</span><span style="color: darkorchid"> {{items.name}}</span></h3>
+             <h3>
+                <span style="color: coral">MOBILE:</span><span style="color: darkorchid"> {{items.mobile}}</span></h3>
+             <h3>
+                <span style="color: coral">EMAIL:</span><span style="color: darkorchid"> {{items.email}}</span></h3>         
+             <!-- <h3>
+                <span style="color: coral">TID:</span><span style="color: darkorchid"> {{items.tid}}</span></h3> -->
+             <h3>
+                <span style="color: coral">DEVICE:</span><span style="color: darkorchid"> {{items.device_type}}</span></h3>
+                <h3>
+                  <span style="color: coral">DESCRIPTION:</span><span style="color: darkorchid"> {{items.description}}</span></h3>
+           </mat-card>  
+         </div>
+       </div>
+     </div>
+
+
+      <div *ngIf="!show && andShow && !od">
+        <ul>
+            <li class="page-back"><a (click)="back()"><i class="fa fa-backward" aria-hidden="true"></i> Back</a>
+            </li>
+        </ul>
+     
+    
+    <div class="tab-inn">
+        <div class="table-responsive table-desi">
+         <table class="table table-hover">
+           <thead>
+             <tr>
+               <th>ORDER</th>
+               <th width="30%">RESTAURANT</th>
+               <th>FOOD</th>
+               <th>PRICE(SR)</th>
+               <th>TYPE</th>
+               <th>RECEIPT</th>
+             </tr>
+           </thead>
+           <tbody *ngFor="let dt of orderDetail">           
+             <tr>
+                <td><span class="list-img"><img [src]="dt.logo" alt="food"></span>
+                </td>
+                <td width="30%"><span class="list-enq-name">{{dt.title}}</span><span class="list-enq-city">{{dt.location}}</span>
+            </td>
+           
+            <td>
+              <div  *ngFor="let meals of dt.meal">
+                <div *ngFor="let item of meals.items">
+              {{item.name}}(meal)
+            </div>
+          </div>
+            <div  *ngFor="let item of dt.items">
+                <div  *ngFor="let itemm of item.items">
+              {{itemm.name}}(items)
+            </div>
+            </div>
+            <div  *ngFor="let deal of dt.deals">
+                <div  *ngFor="let item of deal.items">
+              {{item.name}}(deals)
+            </div>
+            </div>
+            </td>
+                         
+              
+                <td>{{dt.total}}</td>
+                <td>
+                    <span class="label label-primary">{{dt.delivery}}</span>
+                  </td>
+                  <td>
+                      <span class="list-enq-name" (click)="pdf(dt.pdf)"><a style="color: red">PDF</a></span>
+                      
+
+                  </td>
+                
+             </tr>            
+           </tbody>
+         </table>
+       </div>
+     </div> 
+    </div>
+
+
+
+    <div *ngIf="!show && andShow && od">
+
+        <ul>
+            <li class="page-back"><a (click)="back()"><i class="fa fa-backward" aria-hidden="true"></i> Back</a>
+            </li>
+        </ul>
+     
+      <div class="tab-inn">
+        <div class="table-responsive table-desi">
+         <table class="table table-hover">
+           <thead>
+             <tr>
+               <th>ORDER</th>
+               <th width="30%">RESTAURANT</th>
+               <th>OID</th>
+               <th>Date/Time</th>
+               <th>PRICE(SR)</th>
+               <th>DETAILS</th>
+             </tr>
+           </thead>
+           <tbody *ngFor="let ab of kool">
+             <tr>
+                <td><span class="list-img"><img [src]="ab.logo" alt="food"></span></td>
+                <td width="30%"><span class="list-enq-name">{{ab.title}}</span><span class="list-enq-city">{{ab.location}}</span>
+                </td>
+                <td><span class="list-enq-name">{{ab.oid}}</span></td>
+                <td><a><span class="list-enq-name">{{ab.date}}</span>
+                  <span class="list-enq-city">{{ab.time}}</span></a>
+                </td>
+                <!-- <td><span class="list-enq-name">{{ab.date}}</span></td>
+                <td><span class="list-enq-name">{{ab.time}}</span></td> -->
+                <td>{{ab.total}}</td>     
+                <td>
+                  <span class="label">
+                    <button class="order_history" mat-button (click)="orderDetails(ab.oid)">Order Details</button></span>
+                  </td>          
+             </tr>
+             </tbody>
+             </table>
+             </div>
+             </div>
+    </div>
+    
+
+
+
+
+     <div class="tab-inn">
+       <div class="table-responsive table-desi">
+         <table class="table table-hover" *ngIf="show">
+           <thead>
+             <tr>
+               <th>USER</th>
+               <th>NAME</th>
+               <th>Email</th>
+               <th>PHONE</th>
+               <th>ORDER HISTORY</th>
+               <th>DETAILS</th>
+             </tr>
+           </thead>
+           <tbody *ngFor="let item of data">             
+             <tr>
+                <td><span class="list-img"><img [src]="item.image" alt="food"></span>
+                </td>
+               <td><span class="list-enq-name">{{item.name}}</span>
+               </td>
+               <th>{{item.email}}</th>
+               <td>{{item.mobile}}</td>
+               <td>
+                 <span class="label"><button class="order_history" mat-button (click)="orderHistory(item.uid)"
+                     *ngIf="show">Order History</button></span>
+               </td>
+               <td>
+                 <span class="label">
+                   <button class="order_detail" mat-button (click)="userDetails(item.uid)" *ngIf="show">DETAILS</button>
+                 </span>
+               </td>
+
+             </tr>
+           </tbody>
+         </table>
+       </div>
+     </div>
+
+
+   </section>
+
+ </div>

@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+.modal{
+    background-color:transparent;
+}
+.z-depth-4, .modal{
+    box-shadow: none;
+}
+.modal h1, .modal h2, .modal h3, .modal h4 {
+    color: black;
+}

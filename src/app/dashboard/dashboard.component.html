@@ -1,0 +1,122 @@
+<!-- <app-header></app-header>
+  <app-sidebar></app-sidebar> -->
+<div id="wrapper">
+
+  <!-- Header Section Start Here -->
+  <app-header></app-header>
+  <!-- Header Section End Here -->
+
+  <!-- SideBar Section Start Here -->
+  <app-sidebar></app-sidebar>
+  <!-- SideBar Section End Here -->
+
+
+
+  <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+  
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">SALES</h4>
+        </div>
+        <div class="modal-body">
+          <div  *ngFor="let item of sales" class="modalbx">
+            <h3>
+              <span style="color: coral">NO. OF OFFLINE SALES:</span><span style="color: darkorchid"> 
+                {{item.total_no_of_ofline_sale}}</span></h3>
+                <br>
+            
+              <h3>
+                <span style="color: coral">NO. OF ONLINE SALES:</span><span style="color: darkorchid"> {{item.total_no_of_online_sale}}</span>
+              </h3><br>
+              <h3>
+              <span style="color: coral">TOTAL NO. OF SALES:</span><span style="color: darkorchid"> {{item.total_no_of_sales}}</span>
+            </h3><br>
+            
+                <h3>
+                  <span style="color: coral">OFFLINE SALES(SR):</span><span style="color: darkorchid"> {{item.total_ofline_sales_amount}}</span>
+                </h3><br>
+                
+                  <h3>
+                    <span style="color: coral">ONLINE SALES(SR):</span><span style="color: darkorchid"> 
+                      {{item.total_online_sales_amount}}</span></h3><br>
+                  
+                    <h3>
+                      <span style="color: coral">TOTAL SALES(SR):</span><span style="color: darkorchid"> 
+                        {{item.total_sales_amount}}</span></h3>
+                    
+                     
+          
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  
+  <section class="content_wrapper clearfix toggled">
+    <div class="sb2-2-1">
+      <h2>Admin Dashboard</h2>
+      <div class="db-2" *ngFor="let item of data">
+        <ul>
+          <a>
+          <li [routerLink]="['/merchant']" routerLinkActive="router-link-active" >
+            <div class="dash-book dash-b-1">
+              <h5>Merchants</h5>
+              
+            
+
+              <h4>
+                <span title="{{item.merchant_count}}">{{item.merchant_count}}</span></h4>
+              <!-- <a href="#">View more</a> -->
+            </div>
+        
+          </li>
+        </a>
+          <li [routerLink]="['/usermanagement']" routerLinkActive="router-link-active" >
+            <div class="dash-book dash-b-2">
+              <h5>Users</h5>
+              <h4>
+                <span title="{{item.users_count}}">{{item.users_count}}</span>
+              </h4>
+              <!-- <a href="#">View more</a> -->
+            </div>
+          </li>
+          <li data-toggle="modal" data-target="#myModal">
+            <div class="dash-book dash-b-3">
+              <h5>Sales(SR)</h5>
+              <h4>
+                <span title="{{item.total_sales_amount}}">{{item.total_sales_amount}}</span>
+
+              </h4>
+              <!--<a href="#">View more</a> -->
+
+            </div>
+            <div class="on-div"></div>
+          </li>
+          <li [routerLink]="['/transaction']" routerLinkActive="router-link-active">
+            <div class="dash-book dash-b-4">
+              <h5>Online</h5>
+              <h4 id="text">
+                <span title="{{item.total_online_sales_amount}}">SALE(SR):{{item.total_online_sales_amount}}</span>
+              </h4>  
+              <h4 id="text">
+                  <span title="{{item.total_no_of_online_order_placed}}">ORDER:{{item.total_no_of_online_order_placed}}</span>
+                </h4>            
+             </div>
+             
+          </li> 
+        </ul>
+      </div>
+  </div>	
+	
+  </section>
+
+
+
+</div>

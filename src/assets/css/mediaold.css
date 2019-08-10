@@ -1,0 +1,1609 @@
+@media only screen and (max-width: 1800px){
+.login_form{
+	margin-top: 125px;
+}
+.login_btn {
+    margin: 75px 0 15px 0;
+}
+.login_form .form-group {
+    margin-bottom: 15px;
+}
+.login_form .signup_box {
+    padding: 15px 0;
+}
+.login_form a{
+	font-size:18px;
+}
+.login_image img {
+    width: 710px;
+}
+#password_div .login_form{
+    padding: 0px 150px;
+}
+#password_div .login_image img {
+    width: 800px;
+}
+#signup_div .login_form {
+    padding: 0px 75px;
+}
+.exp_wrapper .uploade_img_large .fileinput-preview{
+	width:425px;
+}
+.exp_wrapper .uploade_img_small .fileinput-preview {
+    width: 210px;
+    height: 210px;
+}
+.exp_wrapper .exp_form{
+	padding:20px;
+}
+.exp_wrapper .exp_form label {
+    font-size: 17px;
+}
+.exp_wrapper .exp_form .form-control{
+	font-size:16px;
+}
+.exp_wrapper .exp_form .form-group .fa{
+	font-size:21px;
+}
+.exp_wrapper .exp_form .form-control {
+	padding: 30px 20px;
+}
+.exp_form .create-btn button{
+	font-size:21px;
+	padding:18px;
+}
+.exp_wrapper .uploade_img_small .fileinput .fa {
+    bottom: 85px;
+    left: 90px;
+}
+.exp_wrapper #closeimg {
+    left: 200px;
+    bottom: 740px;
+}
+.exp_wrapper .exp_form span.tool-text{
+	width:300px;
+}
+.exp_form .checkmark{
+	height: 19px;
+    width: 19px;
+}
+.exp_form .cust_container .checkmark:after {
+    left: 6px;
+    top: 3px;
+    width: 6px;
+    height: 12px;
+}
+.exp_wrapper .fileinput .btn img {
+    width: 60px;
+}
+.exp_form #month_dropdown .checkmark, .exp_form #week_dropdown .checkmark {
+    right: 35px;
+}
+.exp_wrapper .exp_form .select2-container--default .select2-selection--multiple .select2-selection__choice{
+	padding: 10px 30px 10px 15px;
+    font-size: 18px;
+}
+.exp_wrapper .exp_form .select2-container--default .select2-selection--multiple .select2-selection__choice__remove{
+	top:0px;
+}
+.exp_wrapper .exp_form span.toolicon{
+	margin-left:10px;
+}
+.exp_wrapper .exp_form span.toolicon img {
+    width: 18px;
+}
+.sidebar .side_logo a img {
+    width: 70px;
+}
+.main_sidebar ul.side-menu {
+    padding-top: 20px;
+}
+.main_sidebar ul.side-menu>li {
+    padding: 25px 25px;
+}
+.content_wrapper{
+	padding: 35px 50px;
+}
+#wrapper {
+    padding-top: 100px;
+}
+.header_btn ul {
+   margin-bottom:0;
+}
+.exp_wrapper .large_image {
+    width: 425px;
+	height:1000px;
+}
+.content_wrapper .exp_detail_box ul li span.exp_text h6 {
+    font-size: 18px;
+}
+.content_wrapper .exp_detail_box ul li span.exp_text h4 {
+    font-size: 24px;
+}
+.content_wrapper .exp_detail_box ul li {
+    padding: 15px 30px 10px 30px;
+}
+.content_wrapper .exp_detail_box ul li span.exp_img img {
+    width: 55px;
+}
+.lineheight {
+    line-height: 35px;
+}
+.exp_wrapper .small_image {
+    width: 205px;
+    height: 205px;
+}
+.edit_experience .edit_box {
+    margin: 30px 0 30px 0;
+}
+.edit_experience .edit_box h5, .ticket_box .ticket_detail h5 {
+    font-size: 17px;
+}
+.edit_experience .edit_box p, .ticket_box .ticket_detail span  {
+    font-size: 19px;
+	margin:0;
+}
+.exp_wrapper .large_image .text {
+	font-size:24px;
+}
+.ticket_box .ticket_detail{
+	padding:15px;
+	margin:0px 0px 15px 0px;
+}
+.edit_experience a button{
+	font-size:21px;
+}
+.exp_attendance .attendance_box{
+	margin-bottom:15px;
+}
+.exp_attendance .attendance_box{
+	padding:10px 30px;
+}
+.attendance_box .attendance_text h4 {
+    font-size: 17px;
+}
+.attendance_box .attendance_text h5 {
+    font-size: 15px;
+}
+.content_wrapper .edit_exp h3{
+	line-height:60px;
+}
+.insight_wrapper .insight_graph {
+    width: 260px;
+    height: 225px;
+}
+.insight_wrapper .insight_large_graph{
+	width: 660px;
+    height: 500px;
+}
+.insight_wrapper .insight_large_graph img#large_image {
+    margin-top: -70px;
+	margin-left:-70px
+}
+.insight_wrapper .insight_large_graph img#large_image2 {
+    margin-top: -5px;
+}
+.content_wrapper .exp_detail_box ul li.user_button button{
+	font-size:18px;
+}
+.edit_exp .table-responsive{
+	padding:0px 15px;
+}
+.edit_exp .table-responsive table > thead > tr >th, .edit_exp .table-responsive table > tbody > tr > td, .edit_exp .table-responsive span.table_text, .edit_exp .table-responsive table > tbody > tr > td button{
+	font-size: 17px;
+}
+.edit_exp .table-responsive span.table_text{
+	margin-left:25px;
+}
+.edit_exp .user_list .panel-title > a{
+	font-size:21px;
+}
+.edit_exp .table-responsive span.table_img {
+    width: 60px;
+    height: 60px;
+}
+.edit_exp .table-responsive table > thead > tr >th, .edit_exp .table-responsive table > tbody > tr > td{
+	padding: 20px 0;
+}
+.edit_exp .table-responsive table > tbody > tr > td span.tool-text{
+	right:-25px;
+}
+.edit_exp .table-responsive table > tbody > tr > td span.toolicon img {
+    width: 18px;
+}
+.welcome .welcome_image img {
+    width: 550px;
+}
+.welcome .welcome_text h2 {
+    font-size: 32px;
+    line-height: 55px;
+}
+.welcome .welcome_text p {
+    font-size: 21px;
+    line-height: 36px;
+}
+.dashboard_graph .dash_large_img{
+	width: 875px;
+	height:700px;
+}
+.dashboard_graph .dash_small_img{
+	width:415px;
+	height:340px;
+}
+.dashboard_graph .dash_income_img{
+	width: 770px;
+    height: 470px;
+}
+.dashboard_graph .dash_income_small {
+    width: 530px;
+    height: 225px;
+}
+.dashboard_graph .dash_common_img{
+	width: 770px;
+    height: 450px;
+}
+.dashboard_graph .dash_common_small{
+	width: 530px;
+}
+.dashboard_wrap .nav-tabs > li a{
+	font-size:28px;
+}
+.dashboard_wrap .nav-tabs > li.active::after{
+	top:55px;
+	width:75px;
+}
+.experience_wrap .nav-tabs > li a{
+	font-size:21px;
+	padding: 20px 50px;
+}
+.experience_wrap .tab_box button{
+	font-size:21px;
+}
+.experience_wrap .tab_box button .icon .fa {
+    font-size: 21px;
+}
+.experience_wrap .tab_box button .icon {
+    width: 40px;
+    height: 40px;
+}
+.experience_box .experience_content{
+	padding:15px;
+}
+.experience_content .experience_img {
+    width: 125px;
+    height: 100px;
+}
+.experience_content .experience_text {
+    margin-left: 140px;
+}
+.experience_content .experience_text h3 {
+    font-size: 24px;
+}
+.experience_content .experience_text h6 {
+    font-size: 18px;
+}
+
+.experience_content .experience_text span.exp_date {
+    font-size: 42px;
+}
+.experience_content .experience_text span.exp_month h6{
+	font-size: 17px;
+	margin:3px 0;
+}
+.experience_content .experience_text span.exp_month h6.exp_time {
+    font-size: 17px;
+}
+.experience_content p {
+    font-size: 17px;
+}
+.experience_content .attend_btn button{
+	font-size:21px;
+	padding: 15px 25px;
+}
+.experience_content .attend_btn {
+    margin-top: 20px;
+}
+.experience_content .attend_btn span.icon .fa {
+    font-size: 28px;
+}
+.experience_wrap .tab_box button span.text {
+    line-height: 40px;
+}
+}
+@media only screen and (max-width: 1600px){
+.insight_wrapper .insight_large_graph img#large_image {
+    margin-left: -60px;
+}
+.insight_wrapper .insight_large_graph img#large_image2 {
+    margin-top: -10px;
+}
+.logo_div img{
+	width:65px;
+}	
+.login_form {
+    margin-top: 100px;
+}
+.login_form .form-control{
+	font-size:16px;
+}
+.login_form a, .login_form .signup_box h5 {
+    font-size: 16px;
+}
+.login_btn button{
+	font-size:18px;
+	padding:12px 25px;
+}
+.login_btn {
+    margin: 50px 0 15px 0;
+}
+.login_form .signup_box h5{
+	padding:45px 0;
+}
+.login_image img{
+	width:630px;
+}
+.login_form .form-group .fa {
+    top: 22px;
+    font-size: 21px;
+}
+#password_div .login_form {
+    padding: 0px 100px;
+}
+#password_div .login_form h4{
+	line-height:75px;
+}
+#password_div h6 {
+	font-size:14px;
+    line-height: 24px;
+}
+#password_div .login_image img {
+    width: 700px;
+}
+#signup_div .login_form {
+    padding: 0px 50px;
+}
+#signup_div .login_image img {
+    width: 750px;
+}
+#signup_div .sign_text span {
+    font-size: 13px;
+    line-height: 24px;
+}
+.exp_wrapper .uploade_img_large .fileinput-preview {
+    width: 350px;
+}
+.sidebar .side_logo a img {
+    width: 60px;
+}
+.sidebar .side_logo a {
+    font-size: 19px;
+}
+.sidebar .side_logo .fa {
+    font-size: 21px;
+}
+.main_sidebar ul.side-menu>li>a{
+	font-size:16px;
+}
+.main_sidebar ul.side-menu>li>a .fa {
+    font-size: 24px;
+}
+.main_sidebar ul.side-menu>li {
+    padding: 20px 25px;
+}
+.header_btn ul li button {
+    font-size: 11px;
+}
+.header_btn ul li .notify img {
+    width: 25px;
+}
+.header_btn ul li .bell {
+    font-size: 11px;
+    top: 25px;
+    width: 20px;
+    height: 20px;
+	right: 138px;
+}
+.content_wrapper {
+    padding: 25px 50px;
+}
+.content_wrapper h3 {
+    font-size: 28px;
+}
+.exp_wrapper .exp_form label {
+    font-size: 14px;
+}
+.exp_wrapper .exp_form .form-control {
+	padding: 25px 15px;
+    font-size: 14px;
+}
+.exp_wrapper .exp_form .form-group .fa {
+    font-size: 18px;
+	top: 19px;
+}
+.exp_wrapper .exp_form span.toolicon img {
+    width: 15px;
+}
+.exp_wrapper .exp_form span.tool-text {
+    font-size: 11px;
+    line-height: 24px;
+    padding: 15px;
+}
+.exp_form .date-btn button{
+	font-size:15px;
+}
+#expModal .modal-dialog {
+    width: 400px;
+}
+.modal-header {
+    padding: 5px;
+}
+#expModal .modal-body img {
+    width: 55px;
+}
+#expModal .modal-body p {
+    font-size: 13px;
+    line-height: 24px;
+}
+#expModal .modal-footer{
+	padding:10px;
+}
+.exp_wrapper .uploade_img_small .fileinput-preview {
+    width: 165px;
+    height: 165px;
+}
+.exp_wrapper .fileinput .btn img {
+    width: 45px;
+}
+.exp_wrapper .exp_form .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+    top: -5px;
+}
+.exp_wrapper .exp_form textarea.form-control{
+	    padding: 15px 15px;
+}
+.exp_form .dropdown-menu {
+    width: 300px;
+}
+.exp_form .create-btn button {
+    font-size: 18px;
+	padding:15px;
+}
+.header_btn ul li {
+    padding: 15px 35px;
+}
+#wrapper {
+    padding-top: 90px;
+}
+.exp_wrapper .uploade_img_small .fileinput .fa {
+    bottom: 65px;
+    left: 70px;
+	font-size:21px;
+}
+.exp_wrapper #closeimg {
+    left: 160px;
+    bottom: 725px;
+	font-size:21px;
+}
+.content_wrapper .edit_exp span .fa {
+    font-size: 27px;
+}
+.content_wrapper .edit_exp span {
+    font-size: 19px;
+}
+.content_wrapper .exp_detail_box ul li {
+    padding: 10px 20px 5px 20px;
+}
+.content_wrapper .exp_detail_box ul li span.exp_img img {
+    width: 50px;
+}
+.content_wrapper .exp_detail_box ul li span.exp_text h6 {
+    font-size: 14px;
+}
+.content_wrapper .exp_detail_box ul li span.exp_text {
+    margin-left: 15px;
+}
+.content_wrapper .exp_detail_box ul li span.exp_text h4 {
+    font-size: 19px;
+}
+.exp_wrapper .large_image {
+    width: 350px;
+    height: 900px;
+}
+.exp_wrapper .small_image {
+    width: 165px;
+    height: 165px;
+}
+.exp_wrapper .large_image .text {
+    font-size: 21px;
+	left:30%;
+}
+.edit_experience .edit_box {
+    margin: 15px 0 15px 0;
+}
+.edit_experience .edit_icon .icon {
+    width: 35px;
+    height: 35px;
+}
+.edit_experience .edit_icon .icon .fa{
+	font-size:21px;
+}
+.edit_experience .edit_icon {
+    top: 40px;
+	right:-30px;
+}
+.edit_experience .edit_box h5, .ticket_box .ticket_detail h5 {
+    font-size: 16px;
+}
+.edit_experience .edit_box p, .ticket_box .ticket_detail span {
+    font-size: 18px;
+}
+.ticket_box .ticket_detail {
+    padding: 10px;
+}
+.edit_experience a button {
+    font-size: 19px;
+	padding: 10px 25px;
+	margin-right:15px;
+}
+.exp_attendance {
+    margin: 30px 20px;
+}
+.exp_attendance .attendance_box{
+	margin-bottom:12px;
+}
+.attendance_box .attendance_img {
+    width: 50px;
+    height: 50px;
+}
+.attendance_box .attendance_text {
+    margin-left: 75px;
+}
+.attendance_box .attendance_text h4 {
+    font-size: 16px;
+	margin:5px 0;
+}
+.attendance_box .attendance_text h5 {
+    font-family: 'Montserrat-Medium';
+    font-size: 14px;
+}
+.attendance_box #check_attendance {
+    right: -70px;
+}
+.insight_wrapper .insight_graph {
+    width: 220px;
+    height: 200px;
+}
+.insight_wrapper .insight_large_graph {
+    width: 565px;
+    height: 430px;
+}
+.content_wrapper .exp_detail_box ul li.user_button button {
+    font-size: 16px;
+	padding:12px 15px;
+}
+.edit_exp .user_list {
+    margin: 75px 0;
+}
+.edit_exp .user_list .panel-title > a{
+	font-size:21px;
+}
+.edit_exp .table-responsive table > thead > tr >th, .edit_exp .table-responsive table > tbody > tr > td {
+    padding: 20px 0;
+}
+.edit_exp .table-responsive table > thead > tr >th, .edit_exp .table-responsive table > tbody > tr > td, .edit_exp .table-responsive span.table_text{
+	font-size:16px;
+}
+.edit_exp .table-responsive span.table_img {
+    width: 65px;
+    height: 65px;
+}
+.edit_exp .user_list .panel-title > a {
+    font-size: 19px;
+}
+.edit_exp .table-responsive table > tbody > tr > td span.tool-text {
+	font-size: 12px;
+    width: 300px;
+    right: -35px;
+}
+#removeModal .modal-dialog{
+	width:500px;
+}
+#removeModal .modal-header h4 {
+    font-size: 20px;
+    line-height: 32px;
+}
+#removeModal .modal-header button.close {
+    font-size: 28px;
+}
+#removeModal .modal-dialog .modal-body {
+    padding: 0px 35px 35px 35px;
+}
+#removeModal .modal-dialog .modal-body textarea{
+	font-size:19px;
+}
+.welcome .welcome_text h2 {
+    font-size: 24px;
+    line-height: 40px;
+}
+.welcome .welcome_text p {
+    font-size: 18px;
+    line-height: 28px;
+}
+.dashboard_graph .dash_large_img {
+    width: 750px;
+    height: 600px;
+}
+.dashboard_graph .dash_small_img {
+    width: 356px;
+    height: 290px;
+}
+.dashboard_graph .dash_income_img {
+    width: 650px;
+    height: 400px;
+}
+.dashboard_graph .dash_income_small {
+    width: 455px;
+    height: 190px;
+}
+.dashboard_graph .dash_common_img {
+    width: 650px;
+    height: 350px;
+}
+.dashboard_graph .dash_common_small {
+    width: 455px;
+	height:350px;
+}
+.dashboard_wrap .nav-tabs > li a {
+    font-size: 24px;
+}
+.experience_wrap .nav-tabs > li a {
+    font-size: 19px;
+    padding: 20px 35px;
+}
+.experience_wrap .tab_box button {
+    font-size: 18px;
+}
+.experience_wrap .tab_box button .icon .fa {
+    font-size: 18px;
+}
+.experience_wrap .tab_box button .icon {
+    width: 35px;
+    height: 35px;
+}
+.experience_wrap .nav-tabs > li a {
+    padding: 15px 30px;
+}
+.experience_wrap .tab_box button span.text {
+    margin-left: 10px;
+}
+.experience_content .experience_img {
+    width: 115px;
+    height: 90px;
+}
+.experience_content .experience_text h3 {
+    font-size: 21px;
+}
+.experience_content .experience_text h6 {
+    font-size: 14px;
+}
+.experience_content .experience_text span.exp_date {
+    font-size: 40px;
+	margin-right:5px;
+}
+.experience_content .experience_text span.exp_month h6 {
+    font-size: 14px;
+    margin: 3px 0;
+}
+.experience_content .experience_text span.exp_month h6.exp_time {
+    font-size: 14px;
+}
+.experience_content p {
+    font-size: 14px;
+	line-height:28px;
+}
+.experience_content .attend_btn button {
+    font-size: 18px;
+    padding: 15px 20px;
+}
+.experience_content .attend_btn span.icon {
+    width: 50px;
+    height: 50px;
+	margin-left: 15px;
+}
+.experience_content .attend_btn span.icon .fa {
+    font-size: 24px;
+}
+.experience_content .experience_text {
+    margin-left: 130px;
+}
+}
+@media only screen and (max-width: 1400px){
+.login_form h4{
+	font-size:31px;
+	line-height:75px;
+}
+.logo_div {
+    margin: 20px;
+}
+.login_form .form-control{
+	padding: 25px 15px;
+	font-size:13px;
+}
+.login_form a, .login_form .signup_box h5 {
+    font-size: 13px;
+}
+.login_btn button {
+    font-size: 16px;
+}
+.login_form .signup_box {
+    padding: 10px 0;
+}
+.login_image img {
+    width: 560px;
+}
+.login_form .form-group .fa {
+    top: 17px;
+    font-size: 17px;
+}
+.login_form .form-control {
+    padding: 25px 50px;
+}
+.login_form .form-group .fa{
+	left:18px;
+}
+#password_div .login_form {
+    padding: 0px 35px;
+}
+#password_div h6 {
+    font-size: 13px;
+}
+#password_div .login_image img {
+    width: 525px;
+}
+#password_div .login_form {
+    padding: 0 90px;
+}
+#password_div .login_btn {
+    margin: 30px 0 15px 0;
+}
+#signup_div .login_form {
+    padding: 0px 40px;
+}
+#signup_div .login_image img {
+    width: 725px;
+}
+#signup_div .login_form .form-group img {
+    left: 20px;
+    width: 15px;
+}
+.sidebar .side_logo a img {
+    width: 50px;
+}
+.sidebar .side_logo .fa {
+    font-size: 18px;
+}
+.main_sidebar ul.side-menu>li>a .fa {
+    font-size: 21px;
+	margin-right:15px;
+}
+.header_btn ul li .notify img {
+    width: 20px;
+}
+.header_btn ul li .admin img {
+    width: 30px;
+}
+.header_btn ul li {
+    padding: 15px 35px 6px 35px;
+}
+#wrapper {
+    padding-top: 80px;
+}
+.content_wrapper h3 {
+    font-size: 24px;
+    margin: 10px 0 5px 0;
+}
+.exp_wrapper .uploade_img_large .fileinput-preview {
+    width: 300px;
+}
+.exp_wrapper .uploade_img_small .fileinput-preview {
+    width: 140px;
+    height: 140px;
+}
+.main_sidebar ul.side-menu>li>a {
+    font-size: 15px;
+}
+.exp_wrapper .exp_form {
+    padding: 15px;
+}
+.exp_wrapper .exp_form label {
+    font-size: 13px;
+}
+.exp_wrapper .exp_form .form-control {
+    padding: 25px 15px;
+    font-size: 12px;
+}
+.exp_wrapper .exp_form .select2-container--default .select2-selection--multiple .select2-selection__choice {
+    font-size: 14px;
+}
+.exp_wrapper .exp_form .select2-container--default .select2-selection--multiple .select2-selection__choice__remove{
+	font-size:32px;
+	top:-2px;
+}
+.exp_wrapper .exp_form .select2-container--default .select2-selection--multiple .select2-selection__rendered {
+    padding: 10px;
+}
+.exp_form #month_dropdown, .exp_form #week_dropdown {
+    left: 0%;
+}
+.exp_form .date-btn input.text{
+	padding: 12px 15px 30px 15px;
+}
+#expModal .modal-body h5 {
+    line-height: 28px;
+}
+.exp_form .create-btn button {
+    font-size: 16px;
+}
+.exp_wrapper #closeimg {
+    left: 135px;
+    bottom: 710px;
+}
+.exp_wrapper .uploade_img_small .fileinput .fa {
+    bottom: 60px;
+    left: 65px;
+}
+.exp_wrapper .large_image {
+    width: 300px;
+    height: 725px;
+}
+.exp_wrapper .small_image {
+    width: 140px;
+    height: 140px;
+}
+.content_wrapper .edit_exp span {
+    font-size: 16px;
+}
+.content_wrapper .exp_detail_box ul li{
+	margin-left:10px;
+}
+.content_wrapper .exp_detail_box ul li span.exp_text h6 {
+    font-size: 12px;
+	margin:5px 0;
+}
+.content_wrapper .exp_detail_box ul li span.exp_text h4 {
+    font-size: 17px;
+}
+.lineheight {
+    line-height: 27px;
+}
+.content_wrapper .exp_detail_box ul li span.exp_img img {
+    width: 40px;
+}
+.exp_wrapper .edit_experience {
+    padding: 10px 25px;
+}
+.edit_experience .edit_icon .icon .fa {
+    font-size: 17px;
+}
+.edit_experience .edit_box h5, .ticket_box .ticket_detail h5 {
+    font-size: 14px;
+	margin:5px 0;
+}
+.edit_experience .edit_box p, .ticket_box .ticket_detail span {
+    font-size: 16px;
+	line-height:24px;
+}
+.exp_wrapper .large_image .text {
+    font-size: 18px;
+}
+.edit_experience a button {
+    font-size: 17px;
+}
+.attendance_box .attendance_img {
+    width: 40px;
+    height: 40px;
+}
+.attendance_box .attendance_text h4 {
+    font-size: 14px;
+}
+.attendance_box .attendance_text h5 {
+    font-size: 12px;
+	margin:5px 0;
+}
+.attendance_box .attendance_text {
+    margin-left: 60px;
+}
+.exp_attendance .attendance_box {
+    margin-bottom: 10px;
+    padding: 10px 20px;
+}
+.content_wrapper .edit_exp h3 {
+    line-height: 50px;
+}
+.insight_wrapper .insight_graph {
+    width: 190px;
+    height: 200px;
+}
+.insight_wrapper .insight_large_graph {
+    width: 490px;
+    height: 350px;
+}
+.edit_exp .user_list .panel-title > a {
+    font-size: 19px;
+}
+.edit_exp .table-responsive table > thead > tr >th, .edit_exp .table-responsive table > tbody > tr > td, .edit_exp .table-responsive span.table_text {
+    font-size: 15px;
+}
+.edit_exp .table-responsive table > thead > tr >th, .edit_exp .table-responsive table > tbody > tr > td {
+    padding: 15px 0;
+}
+.edit_exp .table-responsive span.table_text {
+    margin-left: 15px;
+}
+.edit_exp .table-responsive span.table_img {
+    width: 50px;
+    height: 50px;
+}
+.edit_exp .table-responsive table > thead > tr >th, .edit_exp .table-responsive table > tbody > tr > td, .edit_exp .table-responsive span.table_text, .edit_exp .table-responsive table > tbody > tr > td button {
+    font-size: 14px;
+}
+.edit_exp .table-responsive table > tbody > tr > td span.toolicon img {
+    width: 16px;
+}
+.edit_exp .table-responsive table > tbody > tr > td span.tool-text {
+    width: 275px;
+	padding:15px;
+	line-height:20px;
+}
+.edit_exp .user_list .panel-default > .panel-heading{
+	padding:15px;
+}
+#removeModal .modal-footer{
+	padding:12px;
+}
+#removeModal .modal-footer button{
+	font-size:17px;
+}
+#removeModal .modal-dialog .modal-body textarea {
+    font-size: 15px;
+}
+#removeModal .modal-header {
+    padding: 20px 60px;
+}
+.welcome .welcome_image img {
+    width: 475px;
+}
+.welcome .welcome_text h2 {
+    font-size: 21px;
+    line-height: 32px;
+}
+.welcome .welcome_text p {
+    font-size: 16px;
+    padding-top: 15px;
+}
+.insight_wrapper .insight_large_graph img#large_image {
+    margin-top: -65px;
+}
+.dashboard_graph .dash_large_img {
+    width: 650px;
+    height: 525px;
+}
+.dashboard_graph .dash_small_img {
+    width: 300px;
+    height: 250px;
+}
+.dash_small_img img#dash_small {
+    margin-top: -60px;
+    margin-left: -30px;
+}
+.dashboard_graph .dash_income_img {
+    width: 560px;
+    height: 400px;
+}
+.dashboard_graph .dash_income_small {
+    width: 390px;
+    height: 190px;
+}
+.dashboard_graph .dash_common_img {
+    width: 560px;
+    height: 315px;
+}
+.dashboard_graph .dash_common_small {
+    width: 390px;
+    height: 315px;
+}
+.dashboard_wrap .nav-tabs > li a {
+    font-size: 21px;
+}
+.dashboard_wrap .nav-tabs > li.active::after {
+    top: 45px;
+    width: 65px;
+}
+.experience_wrap .nav-tabs > li a {
+    font-size: 17px;
+    padding: 15px 25px;
+}
+.experience_wrap .tab_box button {
+    font-size: 16px;
+}
+.experience_wrap .tab_box button .icon {
+    width: 30px;
+    height: 30px;
+}
+.experience_wrap .tab_box button .icon .fa {
+    font-size: 14px;
+}
+.experience_wrap .tab_box button span.text {
+    line-height: 34px;
+}
+.experience_content .experience_img {
+    width: 105px;
+    height: 80px;
+}
+.experience_content .experience_text h3 {
+    font-size: 19px;
+}
+.experience_content .experience_text {
+    margin-left: 120px;
+}
+.experience_content .experience_text h6 {
+    font-size: 12px;
+    margin: 5px 0;
+}
+.experience_content .experience_text span.exp_month h6 {
+    font-size: 12px;
+}
+.experience_content .experience_text span.exp_month h6.exp_time {
+    font-size: 12px;
+}
+.experience_content .experience_text span.exp_date {
+    font-size: 38px;
+}
+.experience_content p {
+    font-size: 12px;
+    line-height: 24px;
+}
+.experience_content .attend_btn button {
+    font-size: 16px;
+    padding: 12px 15px;
+}
+.experience_content .attend_btn span.icon .fa {
+    font-size: 21px;
+}
+.experience_content .attend_btn span.icon {
+    width: 45px;
+    height: 45px;
+}
+}
+@media only screen and (max-width: 1024px){
+.insight_wrapper .insight_large_graph img#large_image {
+    margin-top: -45px;
+	margin-left:-35px;
+}
+#password_div .login_form {
+    padding: 0 20px;
+}
+#signup_div .login_image img {
+    width: 600px;
+}	
+#signup_div .login_form h4 {
+	font-size:21px;
+    line-height: 32px;
+}
+#signup_div .sign_text span {
+    font-size: 12px;
+}
+.main_sidebar{
+	width:225px;
+}
+.content_wrapper {
+    margin-left: 225px;
+}
+/* .exp_wrapper .uploade_img_large .fileinput-preview { */
+    /* width: 250px; */
+/* } */
+.exp_wrapper .uploade_img_small .fileinput-preview {
+    width: 110px;
+    height: 110px;
+}
+.exp_form .date-btn input.text {
+    padding: 12px 15px 25px 15px;
+}
+.exp_wrapper .fileinput .btn img {
+    width: 30px;
+}
+.exp_wrapper #closeimg {
+    left: 85px;
+    bottom: 685px;
+	font-size:17px;
+}
+.exp_wrapper .uploade_img_small .fileinput .fa {
+	font-size:17px;
+    bottom: 35px;
+    left: 45px;
+}
+.exp_wrapper{
+	padding:25px;
+	margin-top: 25px;
+}
+.exp_wrapper .exp_form label {
+    font-size: 11px;
+}
+.exp_wrapper .exp_form .form-control {
+    padding: 20px 5px;
+    font-size: 9px;
+}
+.exp_wrapper .exp_form .form-group .fa {
+    font-size: 15px;
+    top: 13px;
+	right:15px;
+}
+.exp_form .date-btn button {
+    font-size: 10px;
+}
+.exp_wrapper .exp_form .select2-container--default .select2-selection--multiple .select2-selection__rendered {
+    padding: 5px;
+}
+.exp_form .dropdown-menu {
+    width: 250px;
+}
+.sidebar .side_logo a img {
+    width: 45px;
+}
+.header_btn ul li {
+    padding: 15px 25px 6px 25px;
+}
+.header_btn ul li .bell {
+	top:22px;
+    right: 98px;
+}
+.content_wrapper .edit_exp span .fa {
+    font-size: 24px;
+}
+.content_wrapper .edit_exp span {
+    font-size: 14px;
+}
+.content_wrapper .exp_detail_box ul li {
+    padding: 10px 15px 5px 15px;
+}
+.content_wrapper .exp_detail_box ul li span.exp_text {
+    margin-left: 10px;
+}
+.content_wrapper .exp_detail_box ul li span.exp_img img {
+    width: 35px;
+}
+.content_wrapper .exp_detail_box ul li span.exp_text h6 {
+    font-size: 10px;
+}
+.exp_wrapper .uploade_img_large .fileinput-preview {
+    width: 225px;
+}
+.exp_wrapper .large_image {
+    width: 225px;
+    height: 725px;
+}
+.expwrapper .small_image {
+    width: 105px;
+    height: 105px;
+}
+.edit_experience .edit_box h5, .ticket_box .ticket_detail h5 {
+    font-size: 13px;
+}
+.edit_experience .edit_box p, .ticket_box .ticket_detail span {
+    font-size: 15px;
+}
+.edit_experience a button {
+    font-size: 16px;
+}
+.exp_wrapper .small_image {
+    width: 105px;
+    height: 105px;
+}
+.exp_wrapper .large_image .text {
+    font-size: 15px;
+}
+.insight_wrapper .insight_graph {
+    width: 140px;
+    height: 175px;
+}
+.insight_wrapper .insight_large_graph {
+    width: 360px;
+    height: 300px;
+}
+.content_wrapper .exp_detail_box ul li.user_button button {
+    font-size: 13px;
+    padding: 10px 12px;
+}
+.edit_exp .user_list .panel-title > a {
+    font-size: 16px;
+}
+.edit_exp .user_list .panel-heading a::after{
+	font-size:24px;
+}
+.edit_exp .user_list {
+    margin: 60px 0;
+}
+.edit_exp .user_list .panel-title > a {
+    font-size: 14px;
+}
+.edit_exp .table-responsive span.table_text {
+    margin-left: 5px;
+}
+.edit_exp .table-responsive span.table_img {
+    width: 40px;
+    height: 40px;
+	margin-top:15px;
+}
+.edit_exp .table-responsive table > thead > tr > th, .edit_exp .table-responsive table > tbody > tr > td, .edit_exp .table-responsive span.table_text, .edit_exp .table-responsive table > tbody > tr > td button {
+    font-size: 11px;
+}
+.edit_exp .table-responsive table > thead > tr > th, .edit_exp .table-responsive table > tbody > tr > td {
+    padding: 10px 0;
+}
+.edit_exp .table-responsive span.table_text, .edit_exp .table-responsive table > tbody > tr > td button {
+	padding:10px;
+}
+.edit_exp .table-responsive table > tbody > tr > td span.toolicon img {
+    width: 14px;
+}
+.edit_exp .table-responsive table > tbody > tr > td span.tool-text{
+	width:250px;
+	padding:12px;
+	font-size:10px;
+	right:-60px;
+}
+#removeModal .modal-dialog {
+    width: 475px;
+}
+#removeModal .modal-header h4 {
+    font-size: 18px;
+}
+.welcome .welcome_image img {
+    width: 400px;
+}
+.welcome .welcome_text h2 {
+    font-size: 19px;
+    line-height: 24px;
+}
+.welcome .welcome_text p {
+    font-size: 13px;
+	line-height:24px;
+}
+.welcome{
+	margin-top:15px;
+}
+.dashboard_graph .dash_large_img {
+    width: 475px;
+    height: 430px;
+}
+.dashboard_graph .dash_small_img {
+    width: 220px;
+    height: 205px;
+}
+.dashboard_graph .dash_income_img {
+    width: 425px;
+    height: 300px;
+}
+.dashboard_graph .dash_income_small {
+    width: 285px;
+    height: 140px;
+}
+.dashboard_graph .dash_common_img {
+    width: 415px;
+    height: 260px;
+}
+.dashboard_graph .dash_common_small {
+    width: 285px;
+    height: 260px;
+}
+.dashboard_wrap .nav-tabs > li a{
+	font-size
+}
+.experience_box .experience_content {
+    padding: 10px;
+}
+.experience_content .experience_img {
+	width: 80px;
+    height: 70px;
+}
+.experience_content .experience_text {
+    margin-left: 90px;
+}
+.experience_content .experience_text h3 {
+    font-size: 14px;
+}
+.experience_content .experience_text h6 {
+    font-size: 10px;
+}
+.experience_content .experience_text span.exp_date {
+    font-size: 36px;
+}
+.experience_content .experience_text span.exp_month h6 {
+    font-size: 10px;
+}
+.experience_content .experience_text span.exp_month h6.exp_time {
+    font-size: 10px;
+}
+.experience_content p {
+	font-size:10px;
+	padding:10px 0;
+}
+.experience_content .attend_btn button {
+    font-size: 14px;
+    padding: 10px;
+}
+.experience_content .attend_btn span.icon .fa {
+    font-size: 15px;
+}
+.experience_content .attend_btn span.icon {
+    width: 34px;
+    height: 34px;
+	margin-left:5px;
+}
+}
+@media only screen and (max-width: 1023px){
+.welcome .welcome_image img {
+    width: 100%;
+}
+.welcome .welcome_image {
+    margin: 0px;
+}
+.welcome .welcome_text{
+	padding:0px;
+}
+.main_sidebar {
+    width: 200px;
+}
+.main_sidebar.active {
+    min-width: 125px;
+    max-width: 125px;
+}
+.main_sidebar ul.side-menu > li.active a img{
+	margin-right:10px;
+}
+.header_btn ul li {
+    padding: 15px 15px 0px 15px;
+}
+.header_btn ul li button {
+    font-size: 9px;
+}
+.header_btn ul li .notify img {
+    width: 17px;
+}
+.header_btn ul li .bell {
+    right: 67px;
+}
+.header_btn ul li .admin img {
+    width: 25px;
+}
+.content_wrapper {
+    margin-left: 200px;
+}
+.content_wrapper {
+    padding: 25px;
+}
+.logo_div img {
+    width: 55px;
+}
+.login_form {
+    margin-top: 85px;
+}
+.login_form .form-control {
+	font-size: 12px;
+    padding: 20px 40px;
+}
+.login_form .form-group .fa {
+    top: 14px;
+	left:15px;
+    font-size: 14px;
+}
+.login_image img {
+    width: 400px;
+}	
+.login_form h4 {
+    font-size: 28px;
+	line-height:50px;
+}
+.login_form .signup_box {
+    padding: 0;
+}
+#password_div .login_form {
+    padding: 0 10px;
+}
+#password_div .login_form h4 {
+    font-size: 24px;
+    line-height: 50px;
+}
+#password_div h6 {
+    font-size: 10px;
+}
+#password_div .login_image img {
+    width: 400px;
+}
+#signup_div .login_form {
+    padding: 0px 60px;
+}
+#signup_div .login_image img {
+    width: 375px;
+}
+#signup_div .login_form .form-group img {
+	top: 15px;
+    left: 15px;
+    width: 12px;
+}
+.experience_wrap .experience_box{
+	margin:30px 0;
+}
+.experience_wrap .nav-tabs > li a {
+    font-size: 15px;
+    padding: 10px 15px;
+}
+.experience_wrap .tab_box button {
+    font-size: 14px;
+}
+.experience_wrap .tab_box button .icon {
+    width: 25px;
+    height: 25px;
+}
+.experience_wrap .tab_box button .icon .fa {
+    font-size: 12px;
+}
+.experience_wrap .tab_box button span.text {
+    line-height: 26px;
+	margin-left:5px;
+}
+.experience_content .attend_btn {
+    margin-top: 10px;
+}
+body.body_wrap .content_wrapper {
+    margin-left: 115px;
+}
+.main_sidebar.active {
+    min-width: 100px;
+    max-width: 100px;
+}
+.experience_box .experience_content{
+	margin-bottom:15px;
+}
+.content_wrapper .exp_detail_box ul li.user_button button {
+    padding: 8px 12px;
+}
+.edit_exp .table-responsive span.table_text {
+    margin-left: -5px;
+}
+.edit_exp .table-responsive {
+    padding: 0px 0px;
+}
+.edit_exp .table-responsive table > tbody > tr > td span.tool-text{
+	width: 200px;
+	padding: 10px;
+	right: -50px;
+	line-height: 17px;
+	bottom:60%;
+}
+.edit_exp .table-responsive table > thead > tr > th, .edit_exp .table-responsive table > tbody > tr > td, .edit_exp .table-responsive span.table_text, .edit_exp .table-responsive table > tbody > tr > td button {
+    font-size: 10px;
+}
+}
+@media only screen and (max-width: 767px){
+.welcome{
+	padding:10px;
+}
+.welcome .welcome_text p{
+	font-size:11px;
+	padding-top:0px;
+}
+.content_wrapper .edit_exp span .fa {
+    font-size: 21px;
+}
+.login_form {
+    margin-top: 0;
+}
+.login_image{
+	display:none;
+}	
+.logo_div img {
+    width: 45px;
+}
+#signup_div .login_form h4{
+	padding-bottom:0px;
+}
+#signup_div .sign_text {
+    padding: 5px 0;
+    text-align: center;
+}
+#signup_div .login_btn {
+    margin: 15px 0 15px 0;
+}
+.main_sidebar ul.side-menu > li > a img {
+    width: 17px;
+    margin-right: 5px;
+}
+.main_sidebar ul.side-menu > li > a {
+    font-size: 13px;
+}
+.main_sidebar ul.side-menu > li {
+    padding: 10px 5px;
+}
+.main_sidebar ul.side-menu > li > a .fa {
+    font-size: 21px;
+    margin-right: 5px;
+}
+.main_sidebar {
+    width: 140px;
+}
+.sidebar .side_logo {
+	padding: 15px 0px 15px 15px;
+}
+.sidebar .side_logo a img {
+    width: 50px;
+}
+.sidebar .side_logo a {
+    font-size: 14px;
+}
+.sidebar .side_logo .fa {
+    font-size: 14px;
+}
+.main_sidebar.active {
+    min-width: 75px;
+    max-width: 75px;
+}
+body.body_wrap .content_wrapper {
+    margin-left: 85px;
+}
+.main_sidebar ul.side-menu {
+    padding-top: 10px;
+}
+.content_wrapper {
+    margin-left: 150px;
+	padding:15px;
+}
+.content_wrapper h3 {
+    font-size: 19px;
+}
+.main_sidebar ul.side-menu > li.active {
+    border-left: 3px solid #3ae0e0;
+}
+.header_btn ul li {
+    padding: 15px 5px 6px 5px;
+}
+.header_btn ul li button {
+    padding: 8px;
+    word-spacing: 0px;
+}
+.header_btn ul li .bell {
+    right: 40px;
+}
+.header_btn ul li .bell {
+    font-size: 10px;
+}
+.experience_wrap .tab_box {
+    margin: 15px 0;
+}
+.experience_wrap .nav-tabs > li a {
+    font-size: 12px;
+    padding: 10px 10px;
+}
+.experience_wrap .tab_box button {
+    font-size: 11px;
+	padding:10px 18px;
+	float: left;
+	margin-top:15px;
+}
+.experience_wrap .tab_box button .icon {
+    width: 20px;
+    height: 20px;
+}
+.experience_wrap .tab_box button .icon .fa {
+    font-size: 10px;
+}
+.experience_wrap .tab_box button span.text {
+    line-height: 20px;
+}
+.experience_wrap .tab_box .nav-tabs {
+    float: none;
+}
+.experience_wrap .experience_box {
+    margin: 20px 0;
+	margin-right:10px;
+}
+}

@@ -1,0 +1,266 @@
+<div id="wrapper">
+  <app-header></app-header>
+  <app-sidebar></app-sidebar>
+
+  <section class="content_wrapper clearfix toggled">
+    <!-- style="padding: 25px 50px;margin-left:282px; -->
+
+    <!-- Trigger the modal with a button -->
+
+    <!-- Modal -->
+    <div class="tab-inn">
+      <div class="table-responsive table-desi">
+        <table class="table table-hover" *ngIf="show">
+          <thead>
+            <tr>
+              <th>MERCHANT</th>
+              <th width="30%">NAME</th>
+              <th>MID</th>
+              <th style="text-align: center;">DETAILS</th>
+              <th style="text-align: center;">SALES</th>
+            </tr>
+          </thead>
+          <tbody *ngFor=" let item of merchant">
+            <tr>
+              <td><span class="list-img"><img src="{{item.logo}}" alt="food"></span>
+              </td>
+              <!-- <td><span class="list-enq-name">{{item.title}}</span>
+              </td> -->
+              <td width="30%"><span class="list-enq-name">{{item.title}}</span><span class="list-enq-city">{{item.location}}</span>
+              </td>
+
+              <td>{{item?.id}}</td>
+              <td style="text-align: center;">
+                <span class="label"> <button mat-button class="order_detail" *ngIf="show"
+                    (click)="merchantDetails(item.id)">Details</button></span>
+              </td>
+              <td style="text-align: center;">
+                <span class="label">
+                  <button mat-button class="order_history" data-toggle="modal" data-target="#myModal"
+                    (click)="sales(item.id)">sales</button>
+                  <div id="myModal" class="modal" role="dialog">
+                    <div class="modal-dialog">
+                      <!-- Modal content-->
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                          <h4 class="modal-title">
+                            Sales Amount(SR)</h4>
+                        </div>
+                        <div class="modal-body">
+                          <h3>
+                            <span>Total: {{merchantDetailss?.total_sale}}</span>
+                            <!-- <p>{{merchantDetailss?.total_sale}}</p> -->
+                          </h3>
+                        </div>
+
+                        <div class="modal-body">
+                          <h3>
+                            <span>Online: {{merchantDetailss?.online_sale}}</span>
+                                                      </h3>
+                        </div>
+
+                        <div class="modal-body">
+                          <h3>
+                            <span>Offline: {{merchantDetailss?.ofline_sale}}
+                            </span>
+                          
+                          </h3>
+                        </div>
+
+
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </span>
+              </td>
+
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div *ngIf="andShow">
+
+
+      <mat-card *ngFor=" let item of merchantDetail">
+        <ul>
+          <li class="page-back"><a (click)="back()"><i class="fa fa-backward" aria-hidden="true"></i> Back</a>
+          </li>
+        </ul>
+        <img [src]="item.logo" alt="logo" class="mer_image">
+        <h3>
+          <span style="color: coral">NAME:</span><span style="color: darkorchid"> {{item.title}}</span></h3>
+        <h3>
+          <span style="color: coral">ID:</span><span style="color: darkorchid"> {{item.id}}</span></h3>
+        <h3>
+          <span style="color: coral">PHONE:</span><span style="color: darkorchid"> {{item.phone}}</span></h3>
+        <h3>
+          <span style="color: coral">Address:</span><span style="color: darkorchid"> {{item.location}}</span></h3>
+        <h3>
+          <span style="color: coral">Facebook:</span><span style="color: darkorchid"> {{item.facebook}}</span></h3>
+        <h3>
+          <span style="color: coral">Instagram:</span><span style="color: darkorchid"> {{item.instagram}}</span></h3>
+        <h3>
+          <span style="color: coral">Twitter:</span><span style="color: darkorchid"> {{item.twitter}}</span></h3>
+        <h3>
+          <span style="color: coral">Ratings:</span><span style="color: darkorchid"> {{item.ratings}}</span></h3>
+        <br>
+
+        <button mat-button style="color: rgb(255, 0, 43)" class="merchant" (click)="reviews(item.id)">User
+          Reviews</button>
+
+
+        <div *ngIf="item.pid==1" class="img">
+          <img src="assets\images\free.jpg">
+        </div>
+        <div *ngIf="item.pid==2" class="img">
+          <img src="assets\images\verified.jpg">
+        </div>
+        <div *ngIf="item.pid==3" class="img">
+          <img src="assets\images\not_verified.png">
+        </div>
+
+      </mat-card>
+    </div>
+
+
+
+
+
+
+
+
+
+    <mat-card *ngIf="abc">
+       
+
+
+      <div>
+        <ul>
+          <li class="page-back"><a (click)="back()"><i class="fa fa-backward" aria-hidden="true"></i> Back</a>
+          </li>
+        </ul>
+
+        <div *ngIf="!aaa">
+            <h1>DATA NOT FOUND</h1>
+          </div>
+
+        <div *ngFor="let rev of review"> 
+          
+       <div class="star_rate">    
+            <span ng-repeat="let rev of review">    
+              <span style="float: left;"><h1 class="header_cont">RATINGS:</h1></span>             
+                <span class="stars alignright">
+                    <span [ngStyle]="{'width': size}"></span>                
+                </span>
+            </span>
+          </div>
+          
+          <div *ngFor="let com of rev.comments">
+            <ul>
+              <li>
+
+                <div class="listbox clearfix">
+                    <div class="listimg">
+                  <img src="{{com.image}}" width="35" alt="Profile Avatar" title="{{com.name}}" />
+                    </div>
+                    <div class="listdetail">
+                      <div class="listtext clearfix">
+                        <h3><b>{{com.name}}</b></h3>
+
+                      
+                        
+                      <h6>{{com.date | timeAgo}}</h6>
+
+                      </div>
+                      <div class="cmntext">
+                        
+                <p>{{com.comment}}</p>
+                      </div>
+                    </div>
+
+                  <div class="listicon">
+                    <span class="icon">
+                      <i class="fa fa-thumbs-o-up"></i><span class="like"> <label>{{com.like}}</label></span>
+                    </span>
+                    <span class="icon" (click)="reply(com.replies)">
+                      <i class="fa fa-commenting-o"></i>
+                    </span>
+                  </div>
+                </div>
+
+              </li>
+
+            </ul>
+
+          </div>
+        </div>
+
+      </div>
+
+    </mat-card>
+
+
+
+
+
+    
+      
+    <mat-card *ngIf="kool">
+
+        <div>
+            <ul class="clearfix">
+              <li class="page-back"><a (click)="back()"><i class="fa fa-backward" aria-hidden="true"></i> Back</a>
+              </li>
+            </ul>
+            <div *ngFor="let item of dat">
+            <ul>
+                <li>
+  
+                    <div class="listbox clearfix">
+                        <div class="listimg">
+                          <img src="{{item.image}}" width="35" alt="Profile Avatar" title="{{item.name}}" />
+                        </div>
+                        <div class="listdetail">
+                          <div class="listtext clearfix">
+                            <h3><b>{{item.name}}</b></h3>
+    
+                            <h6>{{item.date | timeAgo}}</h6>
+                          </div>
+                          <div class="cmntext">
+                            
+                    <p>{{item.comment}}</p>
+                          </div>
+                        </div>
+    
+                      
+                    </div>
+  
+                </li>
+  
+              </ul>
+            </div>
+          </div>
+              
+  
+      <!-- <img src="item.image" alt="user">
+      <h1>{{item.name}}</h1>
+      <h1>{{item.comment}}</h1>
+      <h1>{{item.date}}</h1> -->
+
+    </mat-card>
+
+
+
+
+
+  </section>
+
+</div>

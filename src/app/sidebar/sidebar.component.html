@@ -1,0 +1,68 @@
+<!-- SideBar Section Start Here -->
+<div [ngClass]="{'main_sidebar': true,'clearfix': true}">
+  <section class="sidebar clearfix">
+    <div class="side_logo clearfix">
+      <a [routerLink]="['/dashboard']"><img src="assets/images/logo.png" id="show-sidebar"
+          alt="" /><span>Admin</span></a>
+      <!-- <i class="fa fa-times" id="sidebarCollapse"></i> -->
+    </div>
+    <ul class="side-menu clearfix">
+
+      <li [routerLink]="['/dashboard']" routerLinkActive="active" class="sidebarhome"><a href="javascript:"><i
+            class="fa fa-home" id="img1"></i><i class="fa fa-home font-color" id="img2"></i><span>Dashboard</span></a>
+      </li>
+
+      <li [routerLink]="['/usermanagement']" routerLinkActive="active" class="sidebarprofile"><a href="javascript:"><img
+            src="assets/images/side_pro.png" id="img1" alt="" /><img src="assets/images/side_pro2.png" id="img2"
+            alt="" /><span>User</span></a></li>
+
+      <li [routerLink]="['/merchant']" routerLinkActive="active" class="sidebarrestaurantlist"><a href="javascript:">
+          <img src="assets/images/restaurant.png" id="img1" alt="" /><img src="assets/images/restaurant2.png" id="img2"
+            alt="" /><span>Merchant</span></a></li>
+
+      <li [routerLink]="['/transaction']" routerLinkActive="active"><a href="javascript:"><img
+            src="assets/images/payment.png" id="img1" alt="" /><img src="assets/images/payment2.png" id="img2"
+            alt="" /><span>Transactions</span></a></li>
+
+      <li [routerLink]="['/notification']" routerLinkActive="active" class="sidebarrestaurantlist"><a
+          href="javascript:">
+          <img src="assets/images/bell.png" id="img1" alt="" /><img src="assets/images/bell2.png" id="img2"
+            alt="" /><span>Notification</span></a></li>
+
+      <li (click)="logout()"><a href="javascript:"><img src="assets/images/logout.png" alt="" /><span>Logout</span></a>
+      </li>
+
+
+      <!-- <li><a [routerLink]="['/notification']"><img id="img1" src="assets/images/bell.png" alt="" /><img
+            src="assets/images/bell2.png" id="img2" alt="" /><span>Notification</span></a></li> -->
+
+
+      <!-- <li routerLink="/eventlist"  class="sidebareventlist"><a href="javascript:"><img
+              src="assets/images/experience.png" alt="" id="img1" /><img src="assets/images/experience2.png"
+              alt="" id="img2" /><span>Experiences</span></a></li>
+   -->
+      <!-- <li  class="sidebarrestaurantlist"><a
+            href="javascript:"><img src="assets/images/restaurant.png" id="img1" alt="" /><img
+              src="assets/images/restaurant2.png" id="img2" alt="" /><span>Restaurant</span></a></li> -->
+      <!-- <li><a routerLink="/payment" routerLinkActive="active"><img src="assets/images/payment.png"
+          id="img1" alt=""/><span>Payment</span></a></li> -->
+
+      <!-- <li class="sidebarlandpayment"><a
+            href="javascript:"><img src="assets/images/payment.png" id="img1" alt="" /><img
+              src="assets/images/payment2.png" id="img2" alt="" /><span>Payment</span></a></li>
+  
+        <li class="sidebarprofile"> <a href="javascript:"><img
+              src="assets/images/side_pro.png" id="img1" alt="" /><img src="assets/images/side_pro2.png"
+              id="img2" alt="" /><span>Profile</span></a></li>
+  
+        <li><a ><img id="img1" src="assets/images/bell.png" alt="" /><img src="assets/images/bell2.png" id="img2" alt="" /><span>Notification</span></a></li>
+  
+        <li><a  ><i class="fa fa-cog" id="img1"></i><i class="fa fa-cog font-color" id="img2"></i><span>Settings</span></a></li>
+  
+  
+        <li (click)="logout()"><a href="javascript:"><img src="assets/images/logout.png"
+              alt="" /><span>Logout</span></a></li> -->
+    </ul>
+  </section>
+</div>
+<!-- SideBar Section End Here -->

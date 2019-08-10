@@ -1,0 +1,474 @@
+.merchant{
+    color: rgb(255, 0, 43);
+    border-radius: 10px;
+    padding: 9px 17px 9px 17px;
+    outline: none;
+}
+.merchant:focus-within{
+    background: blue;
+}
+
+.order_history{
+    border-radius: 46px;
+    background:rgba(79, 5, 122, 0.507);
+    color: white;
+    text-transform: uppercase;
+      font-size: 15px;
+      padding: 10px;
+      outline: none;
+      border:0;
+  }
+  .order_detail{
+    border-radius: 46px;
+    background:rgba(113, 182, 9, 0.753);
+    color: white;
+    text-transform: uppercase;
+      font-size: 15px;
+      padding: 10px;
+      outline: none;
+      border:0;
+  }
+  .img{
+    width: 150px;
+    height: 150px;
+    position: relative;
+  }
+  .img img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+  }
+  .like-img{
+    width: 300px;
+    position: relative;
+  }
+  .like-img img{
+    max-width: 100%;
+  }
+  .discount_boxx{
+    width: 100px;
+    height: 20px;
+    position: absolute;
+    /* background: #fff; */
+    top: 134px;
+    text-align: center;
+    margin: 0 auto;
+    display: table;
+    /* margin-top: -63px; */
+    left: 144px;
+    font-size: 52px;
+    color: #fff;
+  }
+  .mer_image{
+    width: 100px;
+      height: 100px;
+      width: 100px;
+      height: 100px;
+      border-radius: 100%;
+      display: table;
+  }
+  .modal{
+    background-color: none;
+  }
+//   *{
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: border-box;
+// }
+
+html{
+    font: normal 13px sans-serif;
+}
+
+.comment-section{
+    list-style: none;
+    max-width: 800px;
+    width: 100%;
+    margin: 50px auto;
+    padding: 10px;
+}
+
+.comment{
+    display: flex;
+    border-radius: 3px;
+    margin-bottom: 45px;
+    flex-wrap: wrap;
+}
+
+.comment.user-comment{
+    color:  #808080;
+}
+
+.comment.author-comment{
+    color:  #60686d;
+    justify-content: flex-end;
+}
+
+/* User and time info */
+
+.comment .info{
+    width: 17%;
+}
+
+.comment.user-comment .info{
+    text-align: right;
+}
+
+.comment.author-comment .info{
+    order: 3;
+}
+
+
+.comment .info a{	/* User name */
+    display: block;
+    text-decoration: none;
+    color: #656c71;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 10px 0 3px 0;
+}
+
+.comment .info span{	/* Time */
+    font-size: 11px;
+    color:  #9ca7af;
+}
+
+
+/* The user avatar */
+
+.comment .avatar{
+    width: 8%;
+}
+
+.comment.user-comment .avatar{
+    padding: 10px 18px 0 3px;
+}
+
+.comment.author-comment .avatar{
+    order: 2;
+    padding: 10px 3px 0 18px;
+}
+
+.comment .avatar img{
+    display: block;
+    border-radius: 50%;
+}
+
+.comment.user-comment .avatar img{
+    float: right;
+}
+
+
+
+
+
+/* The comment text */
+
+.comment p{
+    line-height: 1.5;
+    padding: 18px 22px;
+    width: 50%;
+    position: relative;
+    word-wrap: break-word;
+}
+
+.comment.user-comment p{
+    background-color:  #f3f3f3;
+}
+
+.comment.author-comment p{
+    background-color:  #e2f8ff;
+    order: 1;
+}
+
+.user-comment p:after{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 2px solid #f3f3f3;
+    left: -8px;
+    top: 18px;
+}
+
+.author-comment p:after{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 2px solid #e2f8ff;
+    right: -8px;
+    top: 18px;
+}
+
+
+
+
+/* Comment form */
+
+.write-new{
+    margin: 80px auto 0;
+    width: 50%;
+}
+
+.write-new textarea{
+    color:  #444;
+    font: inherit;
+
+    outline: 0;
+    border-radius: 3px;
+    border: 1px solid #cecece;
+    background-color:  #fefefe;
+    box-shadow: 1px 2px 1px 0 rgba(0, 0, 0, 0.06);
+    overflow: auto;
+
+    width:100%;
+    min-height: 80px;
+    padding: 15px 20px;
+}
+
+.write-new img{
+    border-radius: 50%;
+    margin-top: 15px;
+}
+
+.write-new button{
+    float:right;
+    background-color:  #87bae1;
+    box-shadow: 1px 2px 1px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 2px;
+    border: 0;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+
+    padding: 10px 25px;
+    margin-top: 18px;
+}
+
+
+
+/* Responsive styles */
+
+@media (max-width: 800px){
+    /* Make the paragraph in the comments take up the whole width,
+    forcing the avatar and user info to wrap to the next line*/
+    .comment p{
+        width: 100%;
+    }
+
+    /* Reverse the order of elements in the user comments,
+    so that the avatar and info appear after the text. */
+    .comment.user-comment .info{
+        order: 3;
+        text-align: left;
+    }
+
+    .comment.user-comment .avatar{
+        order: 2;
+    }
+
+    .comment.user-comment p{
+        order: 1;
+    }
+
+
+    /* Align toward the beginning of the container (to the left)
+    all the elements inside the author comments. */
+    .comment.author-comment{
+        justify-content: flex-start;
+    }
+
+
+    .comment-section{
+        margin-top: 10px;
+    }
+
+    .comment .info{
+        width: auto;
+    }
+
+    .comment .info a{
+        padding-top: 15px;
+    }
+
+    .comment.user-comment .avatar,
+    .comment.author-comment .avatar{
+        padding: 15px 10px 0 18px;
+        width: auto;
+    }
+
+    .comment.user-comment p:after,
+    .comment.author-comment p:after{
+        width: 12px;
+        height: 12px;
+        top: initial;
+        left: 28px;
+        bottom: -6px;
+    }
+
+    .write-new{
+        width: 100%;
+    }
+}
+.listbox{
+    position: relative;
+    background: #fff;
+    padding: 20px;
+    width: 100%;
+    border-radius: 76px;
+}
+.listbox .listimg{
+    position: relative;
+    width: 75px;
+    height: 75px;
+    float: left;
+    border:1px solid #eee;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0px 0px 2px rgba(0,0,0.5);
+}   
+.listbox .listimg img{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+}
+.listbox .listdetail{
+    margin-left: 15px;
+    display: inline-block;
+    width: 85%;
+}
+.listdetail h3{
+    float: left;
+    text-align: left;
+}
+.listdetail h6{
+    float: right;
+    text-align: right;
+    color:#808080;
+}
+.listdetail span{
+    margin-top: 15px;
+    color: #808080;
+    font-size: 14px;
+}
+.listicon{
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+}
+.listicon span.icon{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border:1px solid #808080;
+    border-radius: 50%;
+    display: inline-block;
+    float: left;
+    margin-right: 25px;
+    cursor: pointer;
+}
+.listicon span.icon .fa{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    color: #808080;
+    font-size: 24px;
+}
+.listicon span.like{
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    background:red;
+    margin-top: -8px;
+}
+.listicon span.like label{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    font-size: 11px;  
+}
+.img{
+    float: right;
+    margin-top: -30px;
+}
+.table > tbody > tr > td{
+    vertical-align: middle;
+}
+/* ------- Demo footer. Please ignore and remove ------- */
+
+.stars-outer {
+    display: inline-block;
+    position: relative;
+    font-family: FontAwesome;
+  }
+   
+  .stars-outer::before {
+    content: "\f006 \f006 \f006 \f006 \f006";
+  }
+   
+  .stars-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+  }
+   
+  .stars-inner::before {
+    content: "\f005 \f005 \f005 \f005 \f005";
+    color: #f8ce0b;
+  }
+  .checked {
+    color: orange;
+  }
+
+  span.stars, span.stars span {
+    display: block;
+   /* Download the star image here: http://stackoverflow.com/questions/1987524/turn-a-number-into-star-rating-display-using-jquery-and-css */
+    background: url('https://apppresser.com/wp-content/uploads/2015/11/stars.png') 0 -16px repeat-x;
+    width: 80px;
+    height: 16px;
+}
+
+span.stars span {
+    background-position: 0 0;
+}
+
+.alignright {
+  float:left;
+}
+
+.star_rate{
+    padding: 33px;
+}
+.alignright{
+     margin: 20px 0px 10px 10px;
+}
+.header_cont{
+    color: orange;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic
+}
+.merchant[_ngcontent-kma-c2]:focus-within {
+    background: transparent !important;
+}
